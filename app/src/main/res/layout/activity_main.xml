@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:id="@+id/layout">
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700px"
+        android:background="@drawable/btn"
+        android:alpha=".5"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Username"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:background="@drawable/btn"
+        android:alpha=".5"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25px"
+        android:alpha=".5"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:fontFamily="@font/montserrat_extralight"
+        android:text="Forgot your password?" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40px"
+        android:backgroundTint="#f7eb0e"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Login"
+        android:textColor="@color/black" />
+
+
+        <TextView
+            app:reflectionColor="#B9B9AA"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="450px"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Login"
+            android:background="@null"
+            android:textColor="#f7eb0e"
+            android:textSize="120px" />
+
+
+
+    <TextView
+        android:id="@+id/registertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat_extralight"
+        android:text="Don't have an account yet?" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode"
+        tools:ignore="UseSwitchCompatOrMaterialXml"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_below="@id/registertxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200px"/>
+
+
+
+</RelativeLayout>

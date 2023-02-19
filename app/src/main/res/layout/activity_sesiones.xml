@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sesiones"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_marginTop="55px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_marginTop="240px"
+        android:id="@+id/frameSesiones"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <FrameLayout
+        android:id="@+id/frameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_below="@id/frameSesiones"/>
+
+    <RelativeLayout
+        android:layout_below="@id/frameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/amarillo">
+
+        <ImageView
+            android:src="@drawable/logotipo_raven_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</RelativeLayout>
